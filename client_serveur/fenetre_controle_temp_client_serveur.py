@@ -67,7 +67,7 @@ def update_temperatures():
     if temperature_consigne >= 0:
         label_temperature_consigne.config(text="Température d'asservissement : {:.1f} °C".format(temperature_consigne))
     else:
-        label_temperature_consigne.config(text="Température d'asservissement : {:.1f} °C".format(temperature_consigne))
+        label_temperature_consigne.config(text="Température d'asservissement : -{:.1f} °C".format(temperature_consigne))
 
     # Ajouter la valeur actuelle à la liste des températures
     temperatures.append(temperature_four)
