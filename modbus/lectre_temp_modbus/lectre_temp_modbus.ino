@@ -16,7 +16,7 @@ if (!ModbusRTUClient.requestFrom(1, HOLDING_REGISTERS, 0, 1)) {
 Serial.print("Failed to read value! Error: ");
 Serial.println(ModbusRTUClient.lastError());
 } else {
-value = ModbusRTUClient.read();
+value = ModbusRTUClient . holdingRegisterRead (1 ,0);
 }
 
 Serial.println(value);
